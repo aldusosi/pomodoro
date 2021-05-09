@@ -1,0 +1,82 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+body{
+    --vermelho:red;
+    --escuro:#212F3D;
+    --branco:#FFFFFF;
+    --verdeEscuro:#196F3D;
+    --verdeNeon:#0ee266 ;
+    --corDeFundo:var(--escuro)  ;
+    
+    display:grid;
+    place-content:stretch;
+    background-color:var(--corDeFundo);
+}
+.App{
+    display:grid;
+    place-content:center;
+    text-align: center;
+    padding:20px;
+    gap:4rem;
+}
+main{
+    display:flex;
+}
+.titulo{
+    color:var(--branco);
+    border-bottom:1px solid var(--verdeNeon);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.estados{
+    display:flex;
+    flex-direction:column;
+}
+.estados button{
+    color:var(--branco);
+    border:none;
+    padding:20px 10px;
+    background-color:inherit;
+    border-bottom:1px solid transparent ;
+    border-left:4px solid transparent ;
+
+}
+
+.estados .selecionado{
+    border-left:4px solid var(--verdeNeon) ;
+}
+.cronometro{
+    display:grid;
+    place-content: center;
+    place-items: center;
+    padding:20px;
+    place-content: center;
+    background-color:var(--verdeEscuro)  ;
+    align-items: center;
+    border-left:4px solid var(--verdeNeon);
+    border-radius:0 8px 8px 0;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.tempo{
+    display:flex;
+    flex-direction:column; 
+    gap:1rem;   
+}
+.tempo button{
+    color:var(--branco);
+    background-color:inherit;
+    border:0;
+}
+.tempo .relogio{
+    color:var(--verdeNeon);
+    font-size: 26px;
+    padding:2px;
+}
+button{
+    cursor:pointer;
+}
+button:hover{
+    color: var(--verdeNeon) ;
+}
